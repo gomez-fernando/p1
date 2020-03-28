@@ -10,25 +10,39 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body>
   <header class="header">
     <div class="barra contenedor">
       <div class="nombre-sitio">
-        <img src="img/logo.png" class="logo" alt="logo de la conferencia">
+        <img id="logo" src="img/logo.png" alt="logo de la conferencia">
       </div>
       <nav class="menu">
-        <a href="#">El evento</a>
-        <a href="#">Actividades</a>
-        <a href="#">Oradores</a>
-        <a href="#">Contacto</a>
+        <a href="index.html">El evento</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="oradores.html">Oradores</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
   <section class="nosotros contenedor">
     <div class="imagen">
-      <img src="./img/girasol.jpg" alt="conferencia 2019" class="imagen">
+      <!-- <img src="./img/girasol.jpg" alt="conferencia 2019" class="imagen"> -->
+      <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/girasol.jpg" alt="foto del evento">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/espantapajaros.jpg" alt="foto del evento">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/walking.jpg" alt="foto del evento">
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contenido-nosotros">
       <h1>El evento</h1>
@@ -130,7 +144,7 @@
 
   <hr class="divider">
 
-  <div class="container">
+  <div id="contacto" class="container">
     <section class="contacto row justify-content-center">
       <div class="col-12 col-md-9 text-center">
         <h2 class="subtitulo"><span>Lugar</span></h2>
@@ -143,7 +157,8 @@
       <div class="w-100 mb-4"></div>
       <div>
         <p class="border-bottom border-top">
-          <img class="contact-icon" src="img/location.png" alt="">Masia Vida Plena, 08262 Callús,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcelona
+          <img class="contact-icon" src="img/location.png" alt="">Masia Vida Plena, 08262
+          Callús,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcelona
         </p>
       </div>
       <div class="w-100 mb-4"></div>
@@ -161,6 +176,13 @@
     </section>
   </div>
 
+  <div id="newsletter" class="container">
+    <iframe width="80%" height="600"
+      src="https://555f26fd.sibforms.com/serve/MUIEAOJ-CSNgWgCip88MHZBmtF2EKCaIf4deOtI3qyLpM5JfabRV0I7qESZY0Sl_swyIVrLbWZgTUuu0QOTh1xeAqXshoWhdv38BSRwY7AYul0iij-iHjV5yph6O34FRn83bV9Cf-8roEI0xbW7AUq_ZM6tD4JLOMKkKp6WH7mqQn95JKWAZs-GdOaxvI-luCSCgoMtVI1ViBK4M"
+      frameborder="0" scrolling="auto" allowfullscreen
+      style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+  </div>
+
   <footer class="footer">
     <div class="contenedor">
       <div class="widget">
@@ -171,9 +193,9 @@
       <div class="widget navegacion">
         <h3>Navegación</h3>
         <nav>
-          <a href="#">La conferencia</a>
-          <a href="#">Actividades</a>
-          <a href="#">Contacto</a>
+          <a href="index.html">La conferencia</a>
+          <a href="actividades.html">Actividades</a>
+          <a href="oradores.html">Contacto</a>
         </nav>
       </div>
       <div class="widget">
